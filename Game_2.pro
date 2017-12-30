@@ -4,7 +4,7 @@
 #
 #-------------------------------------------------
 
-QT       += core gui widgets \
+QT       += core gui \
         multimedia
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
@@ -25,13 +25,15 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 
 SOURCES += \
-        main.cpp \
+    main.cpp \
     tower.cpp \
-    game.cpp
+    game.cpp \
+    bullet.cpp
 
 HEADERS += \
     tower.h \
-    game.h
+    game.h \
+    bullet.h
 
 FORMS += \
         mainwindow.ui
